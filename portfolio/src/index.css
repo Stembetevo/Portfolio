@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@import 'tailwindcss';
+
+:root {
+  --font-body: 'Manrope', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  color-scheme: dark;
+  color: #dbe7f8;
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.1), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(245, 158, 11, 0.08), transparent 24%),
+    #050816;
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #050816;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.1), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(245, 158, 11, 0.08), transparent 24%),
+    linear-gradient(180deg, #050816 0%, #070d1d 48%, #050816 100%);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 84px 84px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85), transparent 95%);
+  opacity: 0.22;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(103, 232, 249, 0.28);
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
