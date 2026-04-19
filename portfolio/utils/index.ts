@@ -1,3 +1,6 @@
+import { FaLinkedin, FaGithub } from "react-icons/fa"
+import { FaXTwitter } from "react-icons/fa6"
+
 export const projects = [
   {
   title: 'FairPlay',
@@ -55,4 +58,10 @@ export const skills = [
   'Next Js',
   'Blockchain Technology',
   'Sui Move'
+]
+
+export const socials = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/stephen-karuru-b78167279/', icon: FaLinkedin },
+  { label: 'X', href: 'https://x.com/step27227', icon: FaXTwitter },
+  { label: 'GitHub', href: 'https://github.com/Stembetevo', icon: FaGithub },
 ]

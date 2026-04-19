@@ -1,5 +1,6 @@
-import { skills } from '../utils'
-import { FaArrowRight } from "react-icons/fa";
+import { skills,socials } from '../utils'
+import { FaArrowRight } from 'react-icons/fa'
+
 
 const Footer = () => {
   return (
@@ -26,8 +27,31 @@ const Footer = () => {
             <p className="mt-4 text-lg leading-8 text-slate-300">
               You can reach me by sending an email to this address
             </p>
+            <div className="mt-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-100/80">
+                Socials
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                {socials.map((social) => {
+                  const Icon = social.icon
+
+                  return (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="secondary-button"
+                    >
+                      <Icon className="h-4 w-4" />
+                      {social.label}
+                    </a>
+                  )
+                })}
+              </div>
+            </div>
             <div className="mt-6 flex flex-wrap gap-4">
-              <a className="secondary-button" href="mailto:hello@yourname.dev">
+              <a className="secondary-button" href="mailto:stephenkaruru05@gmail.com">
                 stephenkaruru05@gmail.com
                 <FaArrowRight />
               </a>
