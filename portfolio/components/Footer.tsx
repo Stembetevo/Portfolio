@@ -1,4 +1,3 @@
-import React from 'react'
 import { skills } from '../utils'
 import { FaArrowRight } from "react-icons/fa";
 
@@ -25,12 +24,11 @@ const Footer = () => {
               Want to talk about a role or a project?
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-300">
-              Replace the placeholders with your own links and email, then this section
-              becomes the direct recruiter handoff.
+              You can reach me by sending an email to this address
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <a className="primary-button" href="mailto:hello@yourname.dev">
-                hello@yourname.dev
+              <a className="secondary-button" href="mailto:hello@yourname.dev">
+                stephenkaruru05@gmail.com
                 <FaArrowRight />
               </a>
               <a className="secondary-button" href="#home">
